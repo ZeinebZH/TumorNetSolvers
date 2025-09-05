@@ -10,7 +10,7 @@ from warnings import warn
 
 import numpy as np
 from batchgenerators.utilities.file_and_folder_operations import isfile, subfiles
-from reg_nnUnet.configuration import default_num_processes
+from TumorNetSolvers.reg_nnUnet.configuration import default_num_processes
 
 
 def _convert_to_npy(npz_file: str, unpack_segmentation: bool = True, overwrite_existing: bool = False,

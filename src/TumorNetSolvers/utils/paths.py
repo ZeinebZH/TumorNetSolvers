@@ -33,7 +33,7 @@ print("All paths and environment variables are set correctly.")
 import os
 
 def set_environment_variables():
-    mount_dir = "/mnt/Drive3/jonas_zeineb/data_and_outputs"
+    mount_dir = "/mnt/Drive3/yeray_jonas/TumorNetSolvers_ext/data_and_outputs"
 
     # Set environment variables
     os.environ['nnUNet_raw'] = os.path.join(mount_dir, "raw_data")

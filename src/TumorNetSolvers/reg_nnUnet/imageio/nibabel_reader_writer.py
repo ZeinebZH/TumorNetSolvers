@@ -21,7 +21,7 @@ from typing import Tuple, Union, List
 import numpy as np
 from nibabel import io_orientation
 
-from reg_nnUnet.imageio.base_reader_writer import BaseReaderWriter
+from TumorNetSolvers.reg_nnUnet.imageio.base_reader_writer import BaseReaderWriter
 import nibabel
 
 

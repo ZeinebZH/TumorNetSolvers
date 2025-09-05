@@ -29,20 +29,20 @@ from TumorNetSolvers.models.embeddings import PatchEmbed3D
 from TumorNetSolvers.models.tumor_surrogate_net import TumorSurrogate
 
 
-from TumorNetSolvers.reg_nnUNet.training.loss.deep_supervision import DeepSupervisionWrapper
-from TumorNetSolvers.reg_nnUNet.training.lr_scheduler.polylr import PolyLRScheduler
-from TumorNetSolvers.reg_nnUNet.training.dataloading.nnunet_dataset import nnUNetDataset
-from TumorNetSolvers.reg_nnUNet.training.dataloading.data_loader_2d import nnUNetDataLoader2D
-from TumorNetSolvers.reg_nnUNet.training.dataloading.data_loader_3d import nnUNetDataLoader3D
-from TumorNetSolvers.reg_nnUNet.training.data_augmentation.reg_transforms import BasicTransform2, SpatialTransform2
-from TumorNetSolvers.reg_nnUNet.training.dataloading.utils import get_case_identifiers, unpack_dataset
-from TumorNetSolvers.reg_nnUNet.training.data_augmentation.compute_initial_patch_size import get_patch_size
-from TumorNetSolvers.reg_nnUNet.training.logging.nnunet_logger import nnUNetLogger
-from TumorNetSolvers.reg_nnUNet.utilities.default_n_proc_DA import get_allowed_n_proc_DA
-from TumorNetSolvers.reg_nnUNet.utilities.collate_outputs import collate_outputs
-from TumorNetSolvers.reg_nnUNet.utilities.helpers import empty_cache, dummy_context
-from TumorNetSolvers.reg_nnUNet.utilities.plans_handling.plans_handler import PlansManager
-from TumorNetSolvers.reg_nnUNet.configuration import ANISO_THRESHOLD
+from TumorNetSolvers.reg_nnUnet.training.loss.deep_supervision import DeepSupervisionWrapper
+from TumorNetSolvers.reg_nnUnet.training.lr_scheduler.polylr import PolyLRScheduler
+from TumorNetSolvers.reg_nnUnet.training.dataloading.nnunet_dataset import nnUNetDataset
+from TumorNetSolvers.reg_nnUnet.training.dataloading.data_loader_2d import nnUNetDataLoader2D
+from TumorNetSolvers.reg_nnUnet.training.dataloading.data_loader_3d import nnUNetDataLoader3D
+from TumorNetSolvers.reg_nnUnet.training.data_augmentation.reg_transforms import BasicTransform2, SpatialTransform2
+from TumorNetSolvers.reg_nnUnet.training.dataloading.utils import get_case_identifiers, unpack_dataset
+from TumorNetSolvers.reg_nnUnet.training.data_augmentation.compute_initial_patch_size import get_patch_size
+from TumorNetSolvers.reg_nnUnet.training.logging.nnunet_logger import nnUNetLogger
+from TumorNetSolvers.reg_nnUnet.utilities.default_n_proc_DA import get_allowed_n_proc_DA
+from TumorNetSolvers.reg_nnUnet.utilities.collate_outputs import collate_outputs
+from TumorNetSolvers.reg_nnUnet.utilities.helpers import empty_cache, dummy_context
+from TumorNetSolvers.reg_nnUnet.utilities.plans_handling.plans_handler import PlansManager
+from TumorNetSolvers.reg_nnUnet.configuration import ANISO_THRESHOLD
 
 
 from batchgenerators.utilities.file_and_folder_operations import join, maybe_mkdir_p, save_json, isfile, load_json

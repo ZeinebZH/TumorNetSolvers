@@ -6,8 +6,8 @@ import numpy as np
 import torch
 from threadpoolctl import threadpool_limits
 
-from reg_nnUnet.training.dataloading.base_data_loader import nnUNetDataLoaderBase
-from reg_nnUnet.training.dataloading.nnunet_dataset import nnUNetDataset
+from TumorNetSolvers.reg_nnUnet.training.dataloading.base_data_loader import nnUNetDataLoaderBase
+from TumorNetSolvers.reg_nnUnet.training.dataloading.nnunet_dataset import nnUNetDataset
 
 class nnUNetDataLoader2D(nnUNetDataLoaderBase):
     def generate_train_batch(self):

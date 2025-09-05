@@ -15,7 +15,7 @@
 import os.path
 from typing import Tuple, Union, List
 import numpy as np
-from reg_nnUnet.imageio.base_reader_writer import BaseReaderWriter
+from TumorNetSolvers.reg_nnUnet.imageio.base_reader_writer import BaseReaderWriter
 import tifffile
 from batchgenerators.utilities.file_and_folder_operations import isfile, load_json, save_json, split_path, join
 

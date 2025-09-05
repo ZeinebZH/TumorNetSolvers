@@ -7,7 +7,7 @@ import numpy as np
 import shutil
 import torch
 from batchgenerators.utilities.file_and_folder_operations import join, load_pickle, isfile
-from reg_nnUnet.training.dataloading.utils import get_case_identifiers
+from TumorNetSolvers.reg_nnUnet.training.dataloading.utils import get_case_identifiers
 
 class nnUNetDataset:
     def __init__(self, folder: str, case_identifiers: List[str] = None,

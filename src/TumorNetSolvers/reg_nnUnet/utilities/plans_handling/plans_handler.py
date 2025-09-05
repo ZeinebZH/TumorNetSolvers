@@ -11,12 +11,12 @@ from typing import Union, Tuple, List, Type, Callable
 import numpy as np
 import torch
 
-from reg_nnUnet.preprocessing.resampling.utils import recursive_find_resampling_fn_by_name
-import reg_nnUnet
+from TumorNetSolvers.reg_nnUnet.preprocessing.resampling.utils import recursive_find_resampling_fn_by_name
+import TumorNetSolvers.reg_nnUnet as reg_nnUnet
 from batchgenerators.utilities.file_and_folder_operations import load_json, join
 
-from reg_nnUnet.imageio.reader_writer_registry import recursive_find_reader_writer_by_name
-from reg_nnUnet.utilities.find_class_by_name import recursive_find_python_class
+from TumorNetSolvers.reg_nnUnet.imageio.reader_writer_registry import recursive_find_reader_writer_by_name
+from TumorNetSolvers.reg_nnUnet.utilities.find_class_by_name import recursive_find_python_class
 #from reg_nnUnet.utilities.label_handling.target_handling import get_labelmanager_class_from_plans
 
 # see https://adamj.eu/tech/2021/05/13/python-type-hints-how-to-fix-circular-imports/
@@ -24,9 +24,9 @@ from typing import TYPE_CHECKING
 from dynamic_network_architectures.building_blocks.helper import convert_dim_to_conv_op, get_matching_instancenorm
 
 if TYPE_CHECKING:
-    from reg_nnUnet.imageio.base_reader_writer import BaseReaderWriter
-    from reg_nnUnet.preprocessing.preprocessors.default_preprocessor import DefaultPreprocessor
-    from reg_nnUnet.experiment_planning.experiment_planners.default_experiment_planner import ExperimentPlanner
+    from TumorNetSolvers.reg_nnUnet.imageio.base_reader_writer import BaseReaderWriter
+    from TumorNetSolvers.reg_nnUnet.preprocessing.preprocessors.default_preprocessor import DefaultPreprocessor
+    from TumorNetSolvers.reg_nnUnet.experiment_planning.experiment_planners.default_experiment_planner import ExperimentPlanner
 
 
 class ConfigurationManager(object):

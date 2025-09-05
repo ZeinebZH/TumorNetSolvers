@@ -13,6 +13,11 @@ Outputs:
 """
 #%%
 import os
+import sys
+current_dir = os.path.dirname(os.path.abspath(__file__))  # scripts directory
+src_path = os.path.abspath(os.path.join(current_dir, '..', 'src'))
+if src_path not in sys.path:
+    sys.path.insert(0, src_path)
 import torch
 from TumorNetSolvers.training.updating_trainer import Trainer
 from batchgenerators.utilities.file_and_folder_operations import load_json

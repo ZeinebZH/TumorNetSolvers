@@ -3,7 +3,7 @@
 # Modified by Zeineb Haouari on December 5, 2024
 from typing import Tuple, Union, List
 import numpy as np
-from reg_nnUnet.imageio.base_reader_writer import BaseReaderWriter
+from TumorNetSolvers.reg_nnUnet.imageio.base_reader_writer import BaseReaderWriter
 import SimpleITK as sitk
 
 
